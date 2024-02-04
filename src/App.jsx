@@ -1,24 +1,17 @@
 import './App.css'
+import {RevneuCard} from './components/RevneuCard'
+
 
 function App() {
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <div className='grid grid-cols-12 md:grid-flow-row'>
-        <div className='bg-blue-500 col-span-6 md:col-span-3'>hello its me </div>
-        <div className='bg-yellow-500 col-span-6 md:col-span-3'>there</div>
-        <div className='bg-green-500 col-span-6 md:col-span-3 '>ok</div>
-        <div className='bg-red-500 col-span-6 md:col-span-3'>not Okay!</div>
-      </div>
-      <div className='grid grid-cols-1 md:grid-cols-3' >
-        <div className='bg-red-600'>hello</div>
-        <div className='bg-green-600'>Its </div>
-        <div className='bg-blue-600'>MeM</div>
-      </div>
-    </>
+    <div className='grid grid-cols-1 md:grid-cols-3 gap-2 ml-96 mt-44'>
+      
+      <RevneuCard className={"bg-blue-700 text-white"} title={"Ammount"} Ammount={"98,321.20"} orderCount={"13"}/>
+      <RevneuCard title={"Pending"} Ammount={"128.20"} orderCount={""}/>
+      <RevneuCard title={"Transaction"} Ammount={"233421.20"} orderCount={"18"}/>
+      
+    </div>
   )
 }
 
